@@ -2,8 +2,8 @@
 
 Dedicated testing repository for Antigravity AI Agent (`gemma4:e2b`).
 
-## Architecture & Submodules
-- `mattiest_core`: Submodule configured on branch `feature/multilingual-support`.
+## Architecture
+- `mattiest_core/`: Embedded directory providing shared rules, workflows, and standards via `mattiest_core/GEMINI.md`.
 
 ## Testing & CI
 CI/CD test suites run automatically on every Pull Request via GitHub Actions.
