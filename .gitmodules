@@ -1,4 +1,0 @@
-[submodule "mattiest_core"]
-	path = mattiest_core
-	url = https://github.com/MatthiasvdBelt/mattiest-core.git
-	branch = feature/multilingual-support
