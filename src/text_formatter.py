@@ -25,3 +25,20 @@ class TextFormatter:
             return ""
         slug = re.sub(r"[^\w\s-]", "", text).strip().lower()
         return re.sub(r"[-\s]+", "-", slug)
+
+    def truncate(self, text: str, max_length: int, suffix: str = "...") -> str:
+        """
+        Truncate text to max_length with suffix appended if length exceeds max_length.
+
+        Raises:
+            ValueError: If max_length is less than len(suffix).
+        """
+        if max_length < len(suffix):
+            raise ValueError("max_length cannot be shorter than suffix length")
+
+        if len(text) <= max_length:
+            return text
+
+        truncate_length = max_length - len(suffix)
+        return text[:truncate_length] + suffix
+
